@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online To Do List</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="../public/js/script.js" defer></script>
+</head>
+<body>
+        <header>
+            <a href="index.html"><img src="../public/images/logo.png" alt="Logo Image" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About The App</a></li>
+                    <li><a href="#contact">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <section id="about">
+            <div class="container">
+                <h1>About The Online To Do List</h1>
+                <div class="about"> 
+                    <span> This info belongs to: <a href="https://todoist.com/" target="_blank">TO DO LIST</a></span>
+                    <h3>Clear your mind</h3>
+
+                    <h1>Capture tasks at the speed of thought</h1>
+                    <p>We’ve spent over a decade refining Todoist to be an extension of your mind. Capture and organize tasks instantly using easy-flowing, natural language.</p>
+
+
+                    <h3>Focus on what’s important</h3>
+
+                    <h1>Stay organized and focused</h1>
+
+                    <p>Achieve mental clarity by sorting tasks into Today, Upcoming, or using custom filters. See only what you need, when you need it.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h1>Online To Do List</h1>
+                <div class="grid-container">
+                    <div class="card-container">
+                        <form id="form" method="post">
+                            <div class="form-group">
+                                <label for="taskname">Task Name</label>
+                                <input type="text" placeholder="Enter task name" id="taskname" >
+                            </div>
+                            <div class="form-group">
+                                <label for="taskdescription">Task Description</label>
+                                <textarea placeholder="Enter task description" name="taskdescription" id="taskdescription"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="taskdudate">Task Due Date</label>
+                                <input type="date" id="taskduedate" placeholder="Set task date">
+                            </div>
+                            <div class="form-group ">
+                                <label for="taskmark">Task Complete?</label>
+                                <div class="radio-container">
+                                    <input type="radio" id="radiobtnyes" name="answer" value="Yes" placeholder="radiobtn" class="inline" required>
+                                    <label for="answer">Yes</label>
+                                    <input type="radio" id="radiobtnno" name="answer" value="NO" placeholder="radiobtn" class="inline" required>
+                                    <label for="answer">NO</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Submit Task</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <br>
+                    <div class="card-container output">
+                        <ul id="taskList" class="grid-item"><p>Your Tasks:
+                             
+                        </p></ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>   
+        
+        <section id="contact">
+            <div class="container">
+                <h1>Get In Touch With Us</h1>
+                <p>Don't hesitate to tell us what you think!</p>
+                <br>
+                <form action="#" method="post" id="contactForm" class="card-container">
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" placeholder="Enter your full name" id="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea placeholder="What is on your mind?" name="message" id="messaage" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="container">
+            <footer>
+                <p>Online To Do List &copy;2024</p>
+                <p>Follow us on <a href="http://x.com" target="_blank">X</a>
+                </p>
+
+                <p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About The App</a></li>
+                        <li><a href="#contact">Get In Touch</a></li>
+                    </ul>
+                </p>
+            </footer>
+        </section>
+</body>
+</html>
